@@ -25,7 +25,7 @@ body{
     overflow: auto;
     padding: 0 1.5rem 0 1.5rem;
 }
-.music{
+.music-player{
     background-color: black;
     position: fixed;
     bottom: 0;
@@ -127,6 +127,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 0.25rem 0 1rem 0;
+    z-index: 10;
 }
 .sticky-nav-button {
     margin-left: 0.75rem;
@@ -150,9 +151,12 @@ a{
     width: 150px;
     border-radius: 0.5rem;
     padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
 }
 .card-container{
     display: flex;
+    flex-wrap: wrap;
 }
 .card-img{
     width: 100%;
@@ -165,4 +169,118 @@ a{
     font-size: 0.85rem;
     opacity: 0.8;
 
+}
+.footer{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid white
+}
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.album{
+    width: 25%;
+}
+.player{
+    width: 50%;
+}
+.control{
+    width: 25%;
+}
+.player-control-icon{
+    height: 1rem;
+    margin-right: 2rem;
+    opacity: 0.7; 
+}
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-control-icon:hover{
+    opacity: 1;
+}
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.25rem;
+}
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+.album{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-img{
+    border-radius: 5px;
+    margin: 2rem 2rem 2rem 2rem;
+    height: 3.4rem;
+}
+.album-bar-2{
+    height: 2rem;
+    margin-left: 1.5rem;
+
+}
+.album-bar-1{
+    height: 1.5rem;
+    margin-left: 2rem;
+    
+}
+.text-1{
+    font-weight: 700;
+    margin-top: 50%;
+}
+.text-2{
+    font-size: 0.85rem;
+    margin-bottom: 50%;
+
+}
+.control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control-icon{
+    height: 1.3rem;
+    margin-left: 1.5rem;
+    opacity: 0.7;
+}
+.control-icon:hover{
+    opacity: 1.2;
+
+}
+.small-icon{
+    height: 3rem;
+}
+.sound-range{
+    width: 25%;
 }
